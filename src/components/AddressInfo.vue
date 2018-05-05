@@ -1,9 +1,9 @@
 <template>
   <div class="address-block">
 	  <div class="address-info">
-		  
+
 		  <AddressCard v-for="(item, index) in items" :key="index" :address="item.address" :name="item.name" :add="item.add" />
-	  		
+
 	  </div>
 	  <div class="address-edit">
 	  	<AddressEdit :isCreate="true"/>
@@ -56,4 +56,3 @@ export default {
   }
 }
 </script>
-

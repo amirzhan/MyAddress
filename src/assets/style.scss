@@ -1,5 +1,5 @@
  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
- 
+
 $fontRoboto: 'Roboto', sans-serif;
 
 body {
@@ -8,57 +8,43 @@ body {
 }
 
 .address-card {
+  box-shadow: 0px 7px 19px rgba(197,197,197,0.31);
+  position: relative;
 	border: 1px solid #E6E6E6;
-	
 	&__info {
-		margin-top:8px;
-		margin-bottom:20px;	
+		height: 100%;
 		display: flex;
-		flex-direction:column;
+		flex-direction: column;
 		flex-wrap: nowrap;
-		justify-content:space-around;
 	}
 	&__divider {
 		height: 1px;
 		background-color: #E6E6E6;
-		margin-left:13px;
-		margin-right:28px;
+		margin-left: 13px;
+		margin-right: 28px;
 	}
-	&__header {
-		display:flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-	}
+	&__header {}
 	&__header-text {
-		margin-top:11px;
-		display:flex;
-		justify-content:center;
+		display: flex;
+		justify-content: center;
 	}
 	&__item {
 		margin: 4px 21px;
 		&_edit {
-			text-decoration:none;
+			text-decoration: none;
 		}
 	}
-	
+
 	&__icon {
-		margin-top:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 		&_home {
-			position:absolute;
-			width: 58px;
-			height: 54px;
-			margin-left:47px;
-			background-image: url("path-305.png");
-			background-repeat:no-repeat;
-		}
-		&_home2 {
-			position:absolute;
-			width: 58px;
-			height: 54px;
-			margin-left:58px;
-			background-image: url("path-306.png");
-			background-repeat:no-repeat;
-		}
+      width: 100px;
+      height: 50px;
+      background: url('house.svg') no-repeat;
+    }
 		&_add {
 			position:absolute;
 			margin-top: 13px;
@@ -81,7 +67,7 @@ body {
 			height:17px;
 			margin-left:65px;
 			margin-top:35px;
-			background: url("path-307.png") no-repeat;	
+			background: url("path-307.png") no-repeat;
 		}
 	}
 }
@@ -95,12 +81,11 @@ body {
 	color:#000;
 	font-size:20px;
 	margin-bottom:14px;
-}	
+}
 
 .add-new-address {
 	width:184px;
 	height:154px;
-	box-shadow: 0px 7px 19px rgba(197,197,197,0.31);
 }
 .existing-address {
 	width:223px;
@@ -110,27 +95,8 @@ body {
 		font-weight:700;
 		color:#000;
 	}
-	&__icon_close {
-		float: right;
-		margin-top:9px;
-		margin-right:22px;
-	}
-	&__icon_close1 {
-		width:12px;
-		height:12px;
-		margin-top:1px;
-		position:absolute;
-		background: url("line-221.png") no-repeat;
-	}
-	&__icon_close2 {
-		width:12px;
-		height:12px;
-		position:absolute;
-		background: url("line-223.png") no-repeat;
-	}
 }
 .create-address {
-	box-shadow: 4px 5px 9px rgba(0,0,0,0.03);
 	width:492px;
 	&__divider {
 		height: 1px;
@@ -155,7 +121,7 @@ body {
 		border-radius:3px;
 		border:none;
 		color:#fff;
-	}	
+	}
 	&__icon_close {
 		width:12px;
 		height:12px;
@@ -180,7 +146,7 @@ body {
 .delete-address {
 	width:316px;
 	height:225px;
-	
+
 	&__divider {
 		height: 1px;
 		background-color: #E6E6E6;
@@ -199,7 +165,7 @@ body {
 		border-radius:3px;
 		border:none;
 		color:#fff;
-	}	
+	}
 	&__item {
 		margin: 4px 28px;
 	}
@@ -231,14 +197,14 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	max-width:980px;	
+	max-width:980px;
 	&__header {
 		display:flex;
 		font-size:20px;
 		font-weight:700;
-		margin: 20px auto;	
+		margin: 20px auto;
 	}
-	&__header-text {	
+	&__header-text {
 		margin:auto;
 	}
 }
@@ -247,4 +213,23 @@ body {
 	box-sizing: border-box;
 }
 
-
+.icon-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 10px;
+    width: 1px;
+    background-color: #000;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
