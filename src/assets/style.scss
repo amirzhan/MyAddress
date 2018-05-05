@@ -1,0 +1,250 @@
+ @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+ 
+$fontRoboto: 'Roboto', sans-serif;
+
+body {
+	font-size:14px;
+	font-family: $fontRoboto;
+}
+
+.address-card {
+	border: 1px solid #E6E6E6;
+	
+	&__info {
+		margin-top:8px;
+		margin-bottom:20px;	
+		display: flex;
+		flex-direction:column;
+		flex-wrap: nowrap;
+		justify-content:space-around;
+	}
+	&__divider {
+		height: 1px;
+		background-color: #E6E6E6;
+		margin-left:13px;
+		margin-right:28px;
+	}
+	&__header {
+		display:flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+	&__header-text {
+		margin-top:11px;
+		display:flex;
+		justify-content:center;
+	}
+	&__item {
+		margin: 4px 21px;
+		&_edit {
+			text-decoration:none;
+		}
+	}
+	
+	&__icon {
+		margin-top:30px;
+		&_home {
+			position:absolute;
+			width: 58px;
+			height: 54px;
+			margin-left:47px;
+			background-image: url("path-305.png");
+			background-repeat:no-repeat;
+		}
+		&_home2 {
+			position:absolute;
+			width: 58px;
+			height: 54px;
+			margin-left:58px;
+			background-image: url("path-306.png");
+			background-repeat:no-repeat;
+		}
+		&_add {
+			position:absolute;
+			margin-top: 13px;
+			margin-left: 130px;
+			width: 32px;
+			height: 32px;
+			background: url("path-398.png") no-repeat;
+		}
+		&_add2 {
+			position:absolute;
+			margin-top: 27px;
+			margin-left: 117px;
+			width: 32px;
+			height: 32px;
+			background: url("path-399.png") no-repeat;
+		}
+		&_door {
+			position:absolute;
+			width:15px;
+			height:17px;
+			margin-left:65px;
+			margin-top:35px;
+			background: url("path-307.png") no-repeat;	
+		}
+	}
+}
+.address-info {
+	max-width:670px;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.header-word {
+	color:#000;
+	font-size:20px;
+	margin-bottom:14px;
+}	
+
+.add-new-address {
+	width:184px;
+	height:154px;
+	box-shadow: 0px 7px 19px rgba(197,197,197,0.31);
+}
+.existing-address {
+	width:223px;
+	height:154px;
+	&__name {
+		margin:11px 0px 7px 20px;
+		font-weight:700;
+		color:#000;
+	}
+	&__icon_close {
+		float: right;
+		margin-top:9px;
+		margin-right:22px;
+	}
+	&__icon_close1 {
+		width:12px;
+		height:12px;
+		margin-top:1px;
+		position:absolute;
+		background: url("line-221.png") no-repeat;
+	}
+	&__icon_close2 {
+		width:12px;
+		height:12px;
+		position:absolute;
+		background: url("line-223.png") no-repeat;
+	}
+}
+.create-address {
+	box-shadow: 4px 5px 9px rgba(0,0,0,0.03);
+	width:492px;
+	&__divider {
+		height: 1px;
+		background-color: #E6E6E6;
+		margin: 0 20px;
+		margin-bottom:20px;
+	}
+	&__form-item {
+		display: flex;
+		margin: 11px 39px;
+		justify-content: space-between;
+	}
+	&__button {
+		float:right;
+		margin-right:39px;
+		margin-bottom:24px;
+		margin-top:12px;
+		text-align:center;
+		background-color:#e24848;
+		text-decoration:none;
+		padding: 6px 12px;
+		border-radius:3px;
+		border:none;
+		color:#fff;
+	}	
+	&__icon_close {
+		width:12px;
+		height:12px;
+		float: right;
+		margin-right:12px;
+		margin-top:9px;
+	}
+	&__icon_close1 {
+		width:12px;
+		height:12px;
+		margin-top:1px;
+		position:absolute;
+		background: url("line-221.png") no-repeat;
+	}
+	&__icon_close2 {
+		width:12px;
+		height:12px;
+		position:absolute;
+		background: url("line-223.png") no-repeat;
+	}
+}
+.delete-address {
+	width:316px;
+	height:225px;
+	
+	&__divider {
+		height: 1px;
+		background-color: #E6E6E6;
+		margin-left: 0 14px;
+	}
+	&__button {
+		margin:29px 0;
+		margin-left: 28px;
+		margin-top: 19px;
+		width: 80px;
+		height:27px;
+		text-align:center;
+		background-color:#e24848;
+		text-decoration:none;
+		padding: 6px 12px;
+		border-radius:3px;
+		border:none;
+		color:#fff;
+	}	
+	&__item {
+		margin: 4px 28px;
+	}
+	&__icon_close {
+		margin-right:10px;
+		width:12px;
+		height:12px;
+		float: right;
+		margin-right:12px;
+		margin-top:9px;
+	}
+	&__icon_close1 {
+		width:12px;
+		height:12px;
+		position:absolute;
+		margin-top:1px;
+		background: url("line-221.png") no-repeat;
+	}
+	&__icon_close2 {
+		width:12px;
+		height:12px;
+		position:absolute;
+		background: url("line-223.png") no-repeat;
+	}
+}
+.address-edit {
+	width:839px;
+	margin-top:35px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-width:980px;	
+	&__header {
+		display:flex;
+		font-size:20px;
+		font-weight:700;
+		margin: 20px auto;	
+	}
+	&__header-text {	
+		margin:auto;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
